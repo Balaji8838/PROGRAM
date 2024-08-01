@@ -1,0 +1,165 @@
+import java.util.Scanner;
+
+public class UppercaseString {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        String uppercase = "";
+        for (int i = 0; i < input.length(); i++) {
+            uppercase += Character.toUpperCase(input.charAt(i));
+        }
+
+        System.out.println("Uppercase string: " + uppercase);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class CountVowels {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        int vowelCount = 0;
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+                ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+                vowelCount++;
+            }
+        }
+
+        System.out.println("Number of vowels: " + vowelCount);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class PalindromeCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        boolean isPalindrome = true;
+        for (int i = 0; i < input.length() / 2; i++) {
+            if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        if (isPalindrome) {
+            System.out.println(input + " is a palindrome.");
+        } else {
+            System.out.println(input + " is not a palindrome.");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class StringLength {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        int length = 0;
+        for (int i = 0; i < input.length(); i++) {
+            length++;
+        }
+
+        System.out.println("Length of the string: " + length);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class ReplaceVowels {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        String replaced = "";
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+                ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+                replaced += '*';
+            } else {
+                replaced += ch;
+            }
+        }
+
+        System.out.println("String after replacing vowels: " + replaced);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class PrintCharacters {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        for (int i = 0; i < input.length(); i++) {
+            System.out.println(input.charAt(i));
+        }
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class ConcatenateStrings {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first string: ");
+        String firstString = scanner.nextLine();
+
+        System.out.print("Enter the second string: ");
+        String secondString = scanner.nextLine();
+
+        String concatenated = firstString + secondString;
+
+        System.out.println("Concatenated string: " + concatenated);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Substrings {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        System.out.println("Substrings:");
+        for (int i = 0; i < input.length(); i++) {
+            for (int j = i + 1; j <= input.length(); j++) {
+                System.out.println(input.substring(i, j));
+            }
+        }
+    }
+}
