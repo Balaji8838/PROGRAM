@@ -1,0 +1,212 @@
+import java.util.Scanner;
+
+public class RightTriangle {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class InvertedRightTriangle {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = rows; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class Square {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= rows; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class RightTriangleNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class InvertedRightTriangleNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = rows; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class SquareNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= rows; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Pyramid {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = i; j < rows; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class InvertedPyramid {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = rows; i >= 1; i--) {
+            for (int j = rows; j > i; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+import java.util.Scanner;
+
+public class Diamond {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = i; j < rows; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = rows - 1; i >= 1; i--) {
+            for (int j = rows; j > i; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class HollowSquare {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= rows; j++) {
+                if (i == 1 || i == rows || j == 1 || j == rows) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
